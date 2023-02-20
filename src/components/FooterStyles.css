@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --hue:200;
+    --saturation:70%;
+    --lightness:55%;
+    --main-color:hsl(var(--hue), var(--saturation), var(--lightness));
+
+
+    /* text colors */
+    --text-white:hsl(0, 0%, 100%);
+    --text-light-gray:hsl(0, 0%, 96%);
+    --text-x-dark-gray: hsl(0, 0%, 10%);
+    --text-dark-gray: hsl(0, 0%, 20%);
+
+    /* bg colors */
+    --body-bg-color: hsl(var(--hue), 60%, 94%);
+    --bg-color: hsl(var(--hue), 60%, 96%);
+    --bg-white: hsl(0, 0%, 100%)
+   
+    /*border color  */
+    --border-color: hsl(var(--hue), 48%, 80%);
+
+    /* shadow */
+    --shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.3);
+    --focus-shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.6);
+
+    /* font size */
+    --fs-4X1: 50px;
+    --fs-3X1: 35px;
+    --fs-2X1: 26px;
+    --fs-X1: 20px;
+    --fs-lg: 18px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
+}
+
+
+
+
+
+
+.footer{
+
+    padding: 26px 0;
+    background-color: var(--main-color);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.footer h3{
+    color: var(--text-white);
+    font-size: var(--fs-2X1);
+    margin: 0 0 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.footer .social-links a{
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    background-color:var(--bg-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+.footer .social-links a:hover{
+    background-color: transparent;
+    color: var(--text-white);
+    border-color: initial;
+}
+.footer .copyright{
+    padding: 20px 0 0 0;
+    color: var(--text-white);
+    text-align: center;
+}

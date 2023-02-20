@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --hue:200;
+    --saturation:70%;
+    --lightness:55%;
+    --main-color:hsl(var(--hue), var(--saturation), var(--lightness));
+
+
+   
+    --text-white:hsl(0, 0%, 100%);
+    --text-light-gray:hsl(0, 0%, 96%);
+    --text-x-dark-gray: hsl(0, 0%, 10%);
+    --text-dark-gray: hsl(0, 0%, 20%);
+
+    
+    --body-bg-color: hsl(var(--hue), 60%, 94%);
+    --bg-color: hsl(var(--hue), 60%, 96%);
+    --bg-white: hsl(0, 0%, 100%);
+   
+    
+    --border-color: hsl(var(--hue), 48%, 80%);
+
+    
+    --shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.3);
+    --focus-shadow: 0 0 10px hsla(var(--hue), 57%, 63%, 0.6);
+
+    
+    --fs-4X1: 50px;
+    --fs-3X1: 35px;
+    --fs-2X1: 26px;
+    --fs-X1: 20px;
+    --fs-lg: 18px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
+}
+
+
+
+
+
+.services{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px;
+}
+
+.services-contents-container{
+    width: 100%;
+    flex-basis: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-title .title::before,
+.section-title .title::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 34px;
+  background-color: var(--main-color);
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+.section-title .title::before{
+  left: 0;
+}
+.section-title .title::after{
+  right: 0;
+}
+
+.service-image-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-item{
+    flex-basis: 22.5%;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-item .img-box{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: var(--shadow);
+    background-color: var(--bg-color);
+    padding: 8px;
+}
+.services-item .img-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+.services-item:hover .img-box img{
+    transform: scale(1.5);
+}
+.services-item h3{
+    text-transform: capitalize;
+    font-size: var(--fs-X1);
+    font-weight: 500;
+}
+
+
+
+
+
+@media  screen and (max-width:799px ) {
+
+}
+@media  screen and (max-width:599px ) {
+    .service-image-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .services-item{
+        flex-basis: 45%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+        margin-bottom: 15px;
+    }
+    .services-item .img-box img{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        transition: transform 0.5s ease;
+    }
+    .services-item h3{
+        text-transform: capitalize;
+        font-size: var(--fs-sm);
+        font-weight: 300;
+        padding-bottom: 10px;
+    }
+
+    .section-title .title::before{
+        left: 14%;
+      }
+    .section-title .title::after{
+        right: 14%;
+      }
+    
+}
+@media  screen and (max-width:399px ) {
+
+    .service-image-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .services-item{
+        flex-basis: 45%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        margin-bottom: 15px;
+        height: 140px;
+        width: 140px;
+    }
+    .services-item .img-box img{
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        transition: transform 0.5s ease;
+    }
+    
+}

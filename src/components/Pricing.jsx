@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import {Link} from "react-router-dom"
 import "./PricingStyles.css"
 
 
@@ -42,7 +43,7 @@ const Pricing = () => {
                             </ul>
                         </div>
                         <div className="pricing-footer">
-                            <a href="#" className="btn">get started</a>
+                            <Link to="/" className="btn">get started</Link>
                         </div>
                     </div>
                    
@@ -71,7 +72,7 @@ const Pricing = () => {
                             </ul>
                         </div>
                         <div className="pricing-footer">
-                            <a href="#" className="btn">get started</a>
+                            <Link to="/" className="btn">get started</Link>
                         </div>
                     </div>
                    
@@ -100,7 +101,7 @@ const Pricing = () => {
                             </ul>
                         </div>
                         <div className="pricing-footer">
-                            <a href="#" className="btn">get started</a>
+                            <Link to="/" className="btn">get started</Link>
                         </div>
                     </div>
                    

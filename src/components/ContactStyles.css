@@ -80,6 +80,7 @@
 
 .input-box{
     margin-bottom: 10px;
+    border-radius: 25px;
   }
   ::placeholder{
     color: var(--text-dark-gray);
